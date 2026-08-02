@@ -25,7 +25,6 @@ body {
 .inside-head {
     height: 80px;
     width: 1200px;
-    /* background-color: chartreuse; */
     display: flex;
     justify-content: space-between;
 }
@@ -37,9 +36,6 @@ body {
 }
 
 img {
-    /* margin: 10px; */
-    /* margin-bottom: 0px; */
-    /* padding-bottom: px; */
     height: 80px;
     width: 180px;
 }
@@ -58,11 +54,6 @@ select {
 
 }
 
-/* .select_lang i {
-    color: white;
-    margin-right: 5px;
-} */
-
 #sign-button {
     font-size: 14px;
     font-weight: bold;
@@ -78,7 +69,7 @@ select {
 
 .hero {
     height: 100vh;
-    background-image: url(../assets/Hero_Image.jpg);
+    background-image: url("../assets/images/Hero Image.jpg");
     background-size: cover;
     background-position: center;
     position: relative;
@@ -91,8 +82,6 @@ select {
     width: 100%;
     background: rgba(0, 0, 0, 0.758);
 }
-
-
 
 .hero-content {
     position: relative;
@@ -129,7 +118,7 @@ select {
     background-color: red;
     height: 60px;
     margin-left: 10px;
-    width: 15%;
+    width: 200px;
     font-size: 22px;
     font-weight: bold;
     border-radius: 5px;
@@ -140,41 +129,267 @@ select {
     font-size: 15px;
     font-weight: bold;
     height: 60px;
-    width: 25%;
+    width: 400px;
     background: transparent;
     padding-left: 10px;
-    /* border: 1px solid white; */
-    /* text-align: center; */
     border-radius: 5px;
     border: 1px solid rgba(255, 255, 255, 0.491);
-    
 }
 
 /* Hero-Next */
 
 .trending {
     background-color: black;
-    height: 600px;
-    width: 100%;
+    padding: 70px 0;
+    border-bottom: 8px solid #232323;
 }
 
-/* .hero::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 10px;
-        background: linear-gradient(
-        to right,
-        #8b0000,
-        #e50914,
-        #8b0000
-    );
-    border-top-left-radius: 10% 100%;
-    border-top-right-radius: 100% 100%;
-    bottom: -1px;
-} */
+.trending-content {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 45px;
+}
 
-/* .hero-next {
+.trending-content h2 {
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.trending-list {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    padding-bottom: 20px;
+    scrollbar-width: none;
+}
+
+.trending-list::-webkit-scrollbar {
+    display: none;
+}
+
+.trending-item {
+    position: relative;
+    flex-shrink: 0;
+    width: 180px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.trending-item:hover {
+    transform: scale(1.05);
+}
+
+.trending-item img {
+    width: 100%;
+    height: 270px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.trending-number {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-size: 80px;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.8);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    pointer-events: none;
+}
+
+/* More Reasons Section */
+
+.more-reasons {
     background-color: black;
-    height: 400px;
-} */
+    padding: 70px 0;
+    border-bottom: 8px solid #232323;
+}
+
+.more-reasons-content {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 45px;
+}
+
+.more-reasons-content h2 {
+    color: white;
+    font-size: 42px;
+    font-weight: bold;
+    margin-bottom: 45px;
+}
+
+.reasons-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.reason-card {
+    background-color: #1a1a1a;
+    padding: 30px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.reason-card:hover {
+    transform: translateY(-5px);
+    background-color: #2d2d2d;
+}
+
+.card-icon {
+    width: 60px;
+    height: 60px;
+    background-color: #e50914;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.card-icon i {
+    color: white;
+    font-size: 28px;
+}
+
+.reason-card h3 {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.reason-card p {
+    color: #b3b3b3;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* FAQ Section */
+
+.faq-section {
+    background-color: black;
+    padding: 70px 0;
+    border-bottom: 8px solid #232323;
+}
+
+.faq-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 45px;
+}
+
+.faq-content h2 {
+    color: white;
+    /* text-align: center; */
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 45px;
+}
+
+.faq-item {
+    margin-bottom: 10px;
+}
+
+.faq-button {
+    width: 100%;
+    background-color: #2d2d2d;
+    color: white;
+    padding: 24px;
+    font-size: 24px;
+    text-align: left;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s;
+}
+
+.faq-button:hover {
+    background-color: #414141;
+}
+
+.plus-icon {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.faq-answer {
+    background-color: #2d2d2d;
+    color: white;
+    padding: 24px;
+    font-size: 24px;
+    display: none;
+    border-top: 1px solid black;
+}
+
+.faq-answer.active {
+    display: block;
+}
+
+.faq-email {
+    margin-top: 45px;
+}
+
+.faq-email #p_id2 {
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.faq-email .get-started-part {
+    justify-content: center;
+}
+
+/* Footer Section */
+
+.footer-section {
+    background-color: black;
+    padding: 70px 0;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 45px;
+    color: white;
+}
+
+.footer-content>p {
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.footer-links {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-content .select-lang {
+    margin-bottom: 20px;
+}
+
+.footer-content .select-lang i {
+    color: white;
+    margin-right: 5px;
+}
+
+.footer-text {
+    font-size: 13px;
+    color: #737373;
+}
