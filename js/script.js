@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 document.querySelectorAll('.faq-answer').forEach(item => {
                     item.classList.remove('active');
                 });
+                
                 document.querySelectorAll('.plus-icon').forEach(item => {
                     item.textContent = '+';
                 });

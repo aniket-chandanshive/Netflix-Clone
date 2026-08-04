@@ -23,6 +23,7 @@ A responsive Netflix-inspired landing page built using HTML, CSS, and JavaScript
 ## 📂 Folder Structure
 
 ```
+
 Netflix-Clone/
 │
 ├── assets/
