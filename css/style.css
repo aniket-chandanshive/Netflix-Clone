@@ -221,8 +221,8 @@ select {
 }
 
 .reasons-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    display: flex;
+    flex-wrap: wrap;
     gap: 30px;
 }
 
@@ -231,6 +231,8 @@ select {
     padding: 30px;
     border-radius: 10px;
     transition: transform 0.3s ease, background-color 0.3s ease;
+    flex: 1 1 calc(25% - 30px);
+    min-width: 250px;
 }
 
 .reason-card:hover {
@@ -364,8 +366,8 @@ select {
 }
 
 .footer-links {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    display: flex;
+    flex-wrap: wrap;
     gap: 15px;
     margin-bottom: 30px;
 }
@@ -374,6 +376,8 @@ select {
     color: white;
     text-decoration: none;
     font-size: 13px;
+    flex: 1 1 calc(25% - 15px);
+    min-width: 150px;
 }
 
 .footer-links a:hover {
